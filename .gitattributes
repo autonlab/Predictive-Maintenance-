@@ -1,3 +1,4 @@
 *.csv lfs
 *.txt lfs
 *.xlsx lfs
+sensor.csv filter=lfs diff=lfs merge=lfs -text
