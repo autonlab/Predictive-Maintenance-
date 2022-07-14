@@ -2,7 +2,7 @@ Sources
 
 The dataset originally comes from the following link: http://www02.smt.ufrj.br/~offshore/mfs/page_01.html
 
-In this source file I provide some useful links connected with that dataset:
+In this source file is provided some useful links connected with that dataset:
 
 Article link: https://towardsdatascience.com/industrial-motor-fault-classification-using-deep-learning-with-iot-implications-fd36ddc8ad5b
 
