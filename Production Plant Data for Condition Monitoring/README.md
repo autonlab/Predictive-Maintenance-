@@ -1,4 +1,5 @@
-#DATASET DESCRIPTION
+# Production Plant Data for Condition Monitoring - DATASET DESCRIPTION
+
 The dataset has been created in order to give the possibility to predict the condition of an important component within the production lines. This condition is essential for the function of the plant and the resulting product quality.
 
 The dataset consist of 8 run-to-failure experiments (we can distinguish files: C8, C9, C7, C16, C15, C13, C14 and C11, whereas C7 and C13 are divided into 2 parts. The results in each of the files listed relate to a different experiment that consists of a running until failure process for the particular studied machine). In this data we are given with  previously properly selected features that are related to the component. The machine studied in all of the experiments is the same but not all the experiments have recorded the same signals.
