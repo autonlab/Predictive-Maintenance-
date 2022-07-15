@@ -17,61 +17,73 @@ The inputs (features) are  as follow:
 * material - this is an information about the material on which the experiment has been conducted - in this case this is wax.
 * feed rate - this column provides an information about the relative velocity of the cutting tool along the workpiece (mm/s)
 * clamp_pressure - gives an information about the pressure used to hold the workpiece in the vise (given in bar unit)
-Each of the measurements from the experiments (files experiment_1 to experiment_18) were taken from 4 motors in the CNC (X, Y, Z axes and spindle). These measurements might be used in 2 ways:
+Each of the measurements from the experiments (files experiment_1 to experiment_18) were taken from 4 motors in the CNC (X, Y, Z axes and spindle). 
+These measurements might be used in 2 ways:
 1) as if every CNC measurement is an independent observation where the operation being performed is given in the column titled the Machining_Process. Active machining operations are labeled as "Layer 1 Up", "Layer 1 Down", "Layer 2 Up", "Layer 2 Down", "Layer 3 Up", and "Layer 3 Down". 
-2) as if each of the 1 experiments is taken as an observation for time series classification.
+2) as if each of the 1 experiments is taken as an observation for time series classification.
 
 The outputs (predictions):
 * tool_condition - provides an information about label for unworn and worn tools
 * machining_finalized - that column informs whether the machining was completed without the workpiece moving out of the pneumatic vise or not.
 * passed_visual_inspection - this column indicates if the workpiece passed visual inspection. This is only available when the machining process in the experiment was completed.
 
+
 Features available in the machining datasets are as follow:
 
 For X axis:
-X1_ActualPosition: actual x position of part (mm)
-X1_ActualVelocity: actual x velocity of part (mm/s)
-X1_ActualAcceleration: actual x acceleration of part (mm/s/s)
-X1_CommandPosition: reference x position of part (mm)
-X1_CommandVelocity: reference x velocity of part (mm/s)
-X1_CommandAcceleration: reference x acceleration of part (mm/s/s)
-X1_CurrentFeedback: current (A)
-X1_DCBusVoltage: voltage (V)
-X1_OutputCurrent: current (A)
-X1_OutputVoltage: voltage (V)
-X1_OutputPower: power (kW)For Y axis:Y1_ActualPosition: actual y position of part (mm)
-Y1_ActualVelocity: actual y velocity of part (mm/s)
-Y1_ActualAcceleration: actual y acceleration of part (mm/s/s)
-Y1_CommandPosition: reference y position of part (mm)
-Y1_CommandVelocity: reference y velocity of part (mm/s)
-Y1_CommandAcceleration: reference y acceleration of part (mm/s/s)
-Y1_CurrentFeedback: current (A)
-Y1_DCBusVoltage: voltage (V)
-Y1_OutputCurrent: current (A)
-Y1_OutputVoltage: voltage (V)
-Y1_OutputPower: power (kW)
+* X1_ActualPosition: actual x position of part (mm)
+* X1_ActualVelocity: actual x velocity of part (mm/s)
+* X1_ActualAcceleration: actual x acceleration of part (mm/s/s)
+* X1_CommandPosition: reference x position of part (mm)
+* X1_CommandVelocity: reference x velocity of part (mm/s)
+* X1_CommandAcceleration: reference x acceleration of part (mm/s/s)
+* X1_CurrentFeedback: current (A)
+* X1_DCBusVoltage: voltage (V)
+* X1_OutputCurrent: current (A)
+* X1_OutputVoltage: voltage (V)
+* X1_OutputPower: power (kW)
+
+For Y axis:
+* Y1_ActualPosition: actual y position of part (mm)
+* Y1_ActualVelocity: actual y velocity of part (mm/s)
+* Y1_ActualAcceleration: actual y acceleration of part (mm/s/s)
+* Y1_CommandPosition: reference y position of part (mm)
+* Y1_CommandVelocity: reference y velocity of part (mm/s)
+* Y1_CommandAcceleration: reference y acceleration of part (mm/s/s)
+* Y1_CurrentFeedback: current (A)
+* Y1_DCBusVoltage: voltage (V)
+* Y1_OutputCurrent: current (A)
+* Y1_OutputVoltage: voltage (V)
+* Y1_OutputPower: power (kW)
 
 For Z axis:
-Z1_ActualPosition: actual z position of part (mm)
-Z1_ActualVelocity: actual z velocity of part (mm/s)
-Z1_ActualAcceleration: actual z acceleration of part (mm/s/s)
-Z1_CommandPosition: reference z position of part (mm)
-Z1_CommandVelocity: reference z velocity of part (mm/s)
-Z1_CommandAcceleration: reference z acceleration of part (mm/s/s)
-Z1_CurrentFeedback: current (A)
-Z1_DCBusVoltage: voltage (V)
-Z1_OutputCurrent: current (A)
-Z1_OutputVoltage: voltage (V)For Spindle:S1_ActualPosition: actual position of spindle (mm)
-S1_ActualVelocity: actual velocity of spindle (mm/s)
-S1_ActualAcceleration: actual acceleration of spindle (mm/s/s)
-S1_CommandPosition: reference position of spindle (mm)
-S1_CommandVelocity: reference velocity of spindle (mm/s)
-S1_CommandAcceleration: reference acceleration of spindle (mm/s/s)
-S1_CurrentFeedback: current (A)
-S1_DCBusVoltage: voltage (V)
-S1_OutputCurrent: current (A)
-S1_OutputVoltage: voltage (V)
-S1_OutputPower: current (A)
-S1_SystemInertia: torque inertia (kg*m^2)M1_CURRENT_PROGRAM_NUMBER: number the program is listed under on the CNC
-M1_sequence_number: line of G-code being executed
-M1_CURRENT_FEEDRATE: instantaneous feed rate of spindleThe last column in the experiment files is titles as Machining_Process - this column provides an information about the current machining stage being performed. There is included the information about the preparation, tracing up and down the Spindle (S) curve and involves different lanes and also repositions  of the spindle as it moves through the air to a certain starting point.
+* Z1_ActualPosition: actual z position of part (mm)
+* Z1_ActualVelocity: actual z velocity of part (mm/s)
+* Z1_ActualAcceleration: actual z acceleration of part (mm/s/s)
+* Z1_CommandPosition: reference z position of part (mm)
+* Z1_CommandVelocity: reference z velocity of part (mm/s)
+* Z1_CommandAcceleration: reference z acceleration of part (mm/s/s)
+* Z1_CurrentFeedback: current (A)
+* Z1_DCBusVoltage: voltage (V)
+* Z1_OutputCurrent: current (A)
+* Z1_OutputVoltage: voltage (V)
+
+For Spindle:
+* S1_ActualPosition: actual position of spindle (mm)
+* S1_ActualVelocity: actual velocity of spindle (mm/s)
+* S1_ActualAcceleration: actual acceleration of spindle (mm/s/s)
+* S1_CommandPosition: reference position of spindle (mm)
+* S1_CommandVelocity: reference velocity of spindle (mm/s)
+* S1_CommandAcceleration: reference acceleration of spindle (mm/s/s)
+* S1_CurrentFeedback: current (A)
+* S1_DCBusVoltage: voltage (V)
+* S1_OutputCurrent: current (A)
+* S1_OutputVoltage: voltage (V)
+* S1_OutputPower: current (A)
+* S1_SystemInertia: torque inertia (kg*m^2)
+
+* M1_CURRENT_PROGRAM_NUMBER: number the program is listed under on the CNC
+* M1_sequence_number: line of G-code being executed
+* M1_CURRENT_FEEDRATE: instantaneous feed rate of spindle
+
+The last column in the experiment files is titles as Machining_Process - this column provides an information about the current machining stage being performed. There is included the information about the preparation, tracing up and down the Spindle (S) curve and involves different lanes and also repositions  of the spindle as it moves through the air to a certain starting point.
