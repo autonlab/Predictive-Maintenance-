@@ -12,6 +12,7 @@ You can use this dataset for the experiment in the fields such as:
 
 In the dataset we can distinguish 18 files with the experiments data recordings and one train file where you can find a general data from each of the 1 different experiments. A sampling rate of the collected data was 100ms.
 In this train file you are given with 7 different columns:
+
 The inputs (features) are  as follow:
 * No - experiment number 
 * material - this is an information about the material on which the experiment has been conducted - in this case this is wax.
@@ -82,6 +83,7 @@ For Spindle:
 * S1_OutputPower: current (A)
 * S1_SystemInertia: torque inertia (kg*m^2)
 
+For the Machine:
 * M1_CURRENT_PROGRAM_NUMBER: number the program is listed under on the CNC
 * M1_sequence_number: line of G-code being executed
 * M1_CURRENT_FEEDRATE: instantaneous feed rate of spindle
