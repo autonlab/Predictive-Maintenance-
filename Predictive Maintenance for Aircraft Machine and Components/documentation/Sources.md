@@ -1,4 +1,4 @@
-Herę is given the original repository from which the dataset was taken and also some very useful links I found on the internet to different codes written for the purpose of performing the predictive maintenance analysis:
+Here is given the original repository from which the dataset was taken and also some very useful links I found on the internet to different codes written for the purpose of performing the predictive maintenance analysis:
 
 
 The original repository can be found under the following link:
