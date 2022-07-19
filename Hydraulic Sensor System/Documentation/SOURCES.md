@@ -9,6 +9,8 @@ Links to Kaggle with the materials on PM in the hydraulic systems:
 2) https://www.kaggle.com/datasets/mayank1897/condition-monitoring-of-hydraulic-systems
 
 UCI repository link, where the database is located: https://archive.ics.uci.edu/ml/datasets/Condition+monitoring+of+hydraulic+systems 
+Citation: Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
+
 
 Link to gitHub with the project: https://github.com/mjain72/Condition-monitoring-of-hydraulic-systems-using-xgboost-modeling/blob/master/HydraulicCondition.ipynb - this link is also provided with the following LICENSE: 
 

@@ -3,6 +3,9 @@
 This datasets have been downloaded from the UCI ML Repository. You can acces online this data via the link below:
 https://archive.ics.uci.edu/ml/datasets/APS+Failure+at+Scania+Trucks
 
+Citation: Dua, D. and Graff, C. (2019). UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
+
+
 The data can also be downloaded from the kaggle website available under the following link:
 https://www.kaggle.com/datasets/uciml/aps-failure-at-scania-trucks-data-set
 
