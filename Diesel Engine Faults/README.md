@@ -8,6 +8,5 @@ A fault simulation model based on a thermodynamic model was developed, from whic
 - compression ratio in the cylinders --> 1500 scenarios;
 - Reduction of the amount of fuel injected into the cylinders --> 1500 scenarios.
 
-Łącznie cała baza danych liczy 3500 różnych scenariuszy awarii dla 4 opisanych powyżej stanów eksploatacyjnych.
-Ze względu na najniższy wspólny poziom błędu w oszacowaniu średnich i maksymalnych ciśnień cyklu spalania, pomiędzy danymi eksperymentalnymi a danymi symulowanymi, na etapie walidacji modeli termodynamicznych i dynamicznych, częstotliwość obrotów silnika ustawiona została na 2500 RPM dla wszystkich scenariuszy.
+In total, the entire database counts 3,500 different failure scenarios for the 4 operating states described above. Due to the lowest common error in the estimation of average and maximum combustion cycle pressures, between the experimental and simulated data, the engine speed frequency was set to 2500 RPM for all scenarios during the validation stage of the thermodynamic and dynamic models.
 
